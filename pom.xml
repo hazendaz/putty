@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.hazendaz</groupId>
+        <artifactId>base-parent</artifactId>
+        <version>24</version>
+        <relativePath />
+    </parent>
+
+    <groupId>com.github.hazendaz.putty</groupId>
+    <artifactId>putty</artifactId>
+    <version>0.73-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>putty</name>
+    <description>Distribution for PuTTY</description>
+    <url>https://hazendaz.github.io/putty/</url>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:ssh://git@github.com/hazendaz/putty.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/hazendaz/putty.git</developerConnection>
+        <url>https://github.com/hazendaz/putty</url>
+        <tag>HEAD</tag>
+    </scm>
+    <distributionManagement>
+        <site>
+            <id>gh-pages</id>
+            <name>Apache Putty Distribution Wrapper GitHub Pages</name>
+            <url>github:https://hazendaz.github.io/putty/</url>
+        </site>
+    </distributionManagement>
+
+    <properties>
+        <putty.version>0.73</putty.version>
+        <download-plugin.version>1.5.0</download-plugin.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <!-- Download -->
+            <plugin>
+                <groupId>com.googlecode.maven-download-plugin</groupId>
+                <artifactId>download-maven-plugin</artifactId>
+                <version>${download-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>wget</goal>
+                        </goals>
+                        <configuration>
+                            <url>https://the.earth.li/~sgtatham/putty/latest/w64/putty.zip</url>
+                            <outputFileName>putty-${putty.version}.zip</outputFileName>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Attach Artifact -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-artifacts</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>attach-artifact</goal>
+                        </goals>
+                        <configuration>
+                            <artifacts>
+                                <artifact>
+                                    <file>${project.build.directory}/putty-${putty.version}.zip</file>
+                                    <type>zip</type>
+                                </artifact>
+                            </artifacts>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
