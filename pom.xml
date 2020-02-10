@@ -11,7 +11,7 @@
 
     <groupId>com.github.hazendaz.putty</groupId>
     <artifactId>putty</artifactId>
-    <version>0.73-SNAPSHOT</version>
+    <version>0.73</version>
     <packaging>pom</packaging>
 
     <name>putty</name>
@@ -29,7 +29,7 @@
         <connection>scm:git:ssh://git@github.com/hazendaz/putty.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/hazendaz/putty.git</developerConnection>
         <url>https://github.com/hazendaz/putty</url>
-        <tag>HEAD</tag>
+        <tag>putty-0.73</tag>
     </scm>
     <distributionManagement>
         <site>
