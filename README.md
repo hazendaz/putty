@@ -1,9 +1,9 @@
-Putty Distro
+PuTTY Distro
 ------------
 
-This project redistributes putty for distribution using maven central.
+This project redistributes PuTTY for distribution using maven central.
 
-For more information on putty, please see [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
+For more information on PuTTY, please see [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
 
 # Motivation #
 
