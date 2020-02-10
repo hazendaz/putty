@@ -1,5 +1,5 @@
-Apache Putty Distro
--------------------
+Putty Distro
+------------
 
 This project redistributes putty for distribution using maven central.
 
