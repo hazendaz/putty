@@ -41,7 +41,7 @@
 
     <properties>
         <putty.version>0.74</putty.version>
-        <download-plugin.version>1.6.0</download-plugin.version>
+        <download-plugin.version>1.6.1</download-plugin.version>
     </properties>
 
     <build>
