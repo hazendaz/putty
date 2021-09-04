@@ -57,6 +57,8 @@
                             <goal>wget</goal>
                         </goals>
                         <configuration>
+                            <overwrite>true</overwrite>
+                            <skipCache>true</skipCache>
                             <url>https://the.earth.li/~sgtatham/putty/latest/w64/putty.zip</url>
                             <outputFileName>putty-${putty.version}.zip</outputFileName>
                         </configuration>
