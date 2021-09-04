@@ -33,9 +33,9 @@
     </scm>
     <distributionManagement>
         <site>
-            <id>gh-pages</id>
-            <name>Apache Putty Distribution Wrapper GitHub Pages</name>
-            <url>github:https://hazendaz.github.io/putty/</url>
+            <id>gh-pages-scm</id>
+            <name>Putty Distribution Wrapper GitHub Pages</name>
+            <url>scm:git:ssh://git@github.com/hazendaz/putty.git</url>
         </site>
     </distributionManagement>
 
