@@ -41,7 +41,7 @@
     </distributionManagement>
 
     <properties>
-        <putty.version>0.77</putty.version>
+        <putty.version>0.78</putty.version>
         <download-plugin.version>1.6.8</download-plugin.version>
     </properties>
 
