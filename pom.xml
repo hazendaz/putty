@@ -53,8 +53,8 @@
     <scm>
         <connection>scm:git:ssh://git@github.com/hazendaz/putty.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/hazendaz/putty.git</developerConnection>
-        <url>https://github.com/hazendaz/putty</url>
         <tag>HEAD</tag>
+        <url>https://github.com/hazendaz/putty</url>
     </scm>
     <distributionManagement>
         <site>
@@ -98,10 +98,10 @@
                 <executions>
                     <execution>
                         <id>attach-artifacts</id>
-                        <phase>package</phase>
                         <goals>
                             <goal>attach-artifact</goal>
                         </goals>
+                        <phase>package</phase>
                         <configuration>
                             <artifacts>
                                 <artifact>
