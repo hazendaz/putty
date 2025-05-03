@@ -36,7 +36,7 @@
 
     <groupId>com.github.hazendaz.putty</groupId>
     <artifactId>putty</artifactId>
-    <version>0.83</version>
+    <version>0.84-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>putty</name>
@@ -53,7 +53,7 @@
     <scm>
         <connection>scm:git:ssh://git@github.com/hazendaz/putty.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/hazendaz/putty.git</developerConnection>
-        <tag>putty-0.83</tag>
+        <tag>HEAD</tag>
         <url>https://github.com/hazendaz/putty</url>
     </scm>
     <distributionManagement>
