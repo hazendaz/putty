@@ -65,7 +65,7 @@
     </distributionManagement>
 
     <properties>
-        <putty.version>0.83</putty.version>
+        <putty.version>0.84</putty.version>
         <download-plugin.version>2.1.0</download-plugin.version>
     </properties>
 
