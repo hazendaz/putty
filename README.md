@@ -13,3 +13,7 @@ For more information on PuTTY, please see [PuTTY](https://www.chiark.greenend.or
 # Motivation #
 
 PuTTY does not currently provide a maven central distribution of the entire project. This project aims to solve that by providing users an alternative location to pull from.
+
+# Note
+
+Due to limit caps at sonatype this is no longer supported for maven distributions.  
